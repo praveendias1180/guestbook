@@ -22,3 +22,7 @@ psql -h localhost -U app
 ```
 
 ![](public/github/phpstorm-db.png)
+
+# EasyAdmin 4
+
+![](public/github/easy-admin.png)
