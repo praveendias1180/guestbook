@@ -31,3 +31,13 @@ psql -h localhost -U app
 
 ![](public/github/guestbook.png)
 
+# Update existing table with NOT NULL
+
+```
+public function up(Schema $schema): void
+{
+    $this->addSql('ALTER TABLE conference ADD slug VARCHAR(255)');
+    $this->addSql("UPDATE conference SET slug=CONCAT(LOWER(city), '-', year)");
+    $this->addSql('ALTER TABLE conference ALTER COLUMN slug SET NOT NULL ');
+}
+```
