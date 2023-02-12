@@ -41,3 +41,14 @@ public function up(Schema $schema): void
     $this->addSql('ALTER TABLE conference ALTER COLUMN slug SET NOT NULL ');
 }
 ```
+
+# Api Platform
+
+https://api-platform.com/
+
+![](public/github/api.png)
+
+![](public/github/api-platform.png)
+
+![](public/github/api-platform-2.png)
+
